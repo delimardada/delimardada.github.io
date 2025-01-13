@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <title> DELIMAR</title>
+            <meta charser="UTF-8">
+            <meta name="viewport" content="width=device—
+            width, user—scalable=no, initial—scale=1, maximum—
+            scale=1, minimum—scale=1">
+            <link rel="stylesheet" href="css/fontello.css">
+            <link rel="stylesheet" href="css/estilos.css">
+            <link rel="stylesheet" href="css/carrito.css">
+        </head>
+    <body>
+        <header>
+            <div class="contenedor">
+                <h1>  <target="_blank" style="text-decoration: none; color: #ffffff;">
+                    DELIMAR
+                </h1>
+                <input type="checkbox" id="menu—bar">
+                <label class="icon-menu" for="menu—bar"></label>
+                <nav class="menu">
+                   <a href="Delimar.html">Inicio</a>                  
+                   <a href="car.html">Ingles</a>
+                   <a href="Servicios.html">Regresar</a>
+                </nav>
+            </div>
+        </header>
+    <div class="product">
+        <div class="product-info">
+            <img src="img/chorizo.png" alt="Producto 1">
+            <div>
+                <h3>Producto 1</h3>
+                <p>Precio: $40.00</p>
+                <button onclick="addToCart(1, 'Producto 1', 40.00)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-info">
+            <img src="img/chorizo.png" alt="Producto 2">
+            <div>
+                <h3>Paquete de 2</h3>
+                <p>Precio: $75.00</p>
+                <button onclick="addToCart(2, 'Producto 2', 75.00)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-info">
+            <img src="img/chorizo.png" alt="Producto 3">
+            <div>
+                <h3>Paquete de 4</h3>
+                <p>Precio: $140.00</p>
+                <button onclick="addToCart(3, 'Producto 3', 140.00)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>Carrito de Compras</h2>	
+        <ul>
+            <li><h3>Si eres Cliente frecuente te ofrecemos un descuento del 5% después de 5 compras.</h3></li>
+            <li><h3>Si compraste 5 unidades o mas te ofrecemos el 5% de descuento. Maximo de 10 unidades por Cliente</h3></li>
+            <li><h3>Compré 2 y llevé el tercero con el 30% de descuento.</h3></li>
+        </ul>
+        <div class="cart"></div>
+    <div class="cart-summary">
+        <p id="cart-discount">Descuento: -$0.00</p>
+        <p id="cart-total">Total: $0.00</p>
+    </div>
+
+    <script src="script/carrito.js"></script>
+</body>
+</html>
